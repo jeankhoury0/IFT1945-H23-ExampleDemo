@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <title>Page 1</title>
+
+</head>
+<body>
+    <main>
+        <!-- Explication du path
+            Le chemin relatif "../index.html" est également utilisé pour 
+            localiser un fichier HTML à partir d'un emplacement de fichier 
+            donné, mais il est légèrement différent du chemin
+            "./pages/page1.html" que nous avons vu précédemment.
+
+            Le symbole ".." signifie "remonte d'un niveau de répertoire", 
+            il est utilisé pour indiquer que le fichier que nous cherchons 
+            se trouve dans le répertoire parent.
+
+            Ainsi, "../index.html" signifie que nous allons remonter d'un 
+            niveau dans l'arborescence de fichiers pour chercher un fichier 
+            nommé "index.html". Par exemple, si nous avons un fichier HTML 
+            appelé "page1.html" dans un sous-répertoire "pages" et que nous 
+            voulons accéder au fichier "index.html" situé dans le répertoire 
+            parent, nous pouvons utiliser "../index.html".
+
+            En résumé, "../index.html" indique que le fichier HTML "index.html" 
+            se trouve dans le répertoire parent du répertoire courant.
+        -->
+        <a href="../index.html" class="return-home">return to home</a>
+        <h1>Page 1</h1>
+        <form>
+        <!-- Formulaire avec un label pour montrer que le champ est obligatoire  -->
+        <label for="name" class="required">Name</label>
+        <input type="text" id="name" required>
+        <input type="submit">
+        </form>
+
+    </main>
+    
+</body>
+</html>

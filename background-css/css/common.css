@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+    background: url("../image/um-lUdeM.jpg") no-repeat center center fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: blue;
+}
+
+main{
+    background-color: blue;
+    color: white;
+    width: 70%;
+    padding: 7%;
+    min-height: 100%;
+}
+
+.return-home{
+    color:white;
+    border: 4px solid white ;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.return-home:hover{
+    background-color: white;
+    color: blue;
+}
+
+.return-home::before{
+    content: "< ";
+    font-size: large;
+}
+
+label.required::after{
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+h1{
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+}
+
+a{
+    color:white;
+}

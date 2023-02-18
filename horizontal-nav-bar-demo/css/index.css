@@ -46,3 +46,7 @@ nav a:hover{
 .menu-active{
     background: var(--jean-defined-accent);
 }
+
+.body:after{
+    content: "Jean Khoury";
+}

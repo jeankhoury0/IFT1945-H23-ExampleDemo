@@ -1,0 +1,51 @@
+<!----------------
+    Copyright Jean Khoury. 2023. All Rights Reserved.
+    This file is licensed under the MIT License.
+    License text available at https://opensource.org/licenses/MIT
+-------------->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Intro a JS!</h1>
+    <div class="container border">
+        <div class="row">
+            <div class="col">
+                <h2>Hello world example</h2>
+                <button class="btn btn-danger" onclick="displayHelloWorld()">Hello world</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p>Extraire le texte d'un formulaire</p>
+                <label for="example-2-form-nom">Nom</label>
+                <input autocomplete="name" type="text" id="example-2-form-nom" class="form-control" >
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" onclick="showNameInput()">Montre le input</button>
+                <button class="btn btn-primary" onclick="clearNameInput()">clear le input</button>
+                <button class="btn btn-primary" onclick="autofillNameInput('jean')">Autofill Jean the input</button>
+                <button class="btn btn-primary" onclick="autofillNameInput('john')">Autofill John the input</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>Addition</h2>
+        </div>
+    </div>
+    <div>
+        <h2>Parsed content (sans format)</h2>
+        <p id="parsedFormat">INNER TEXT</p>
+    </div>
+    <!-- Import the document -->
+    <script src="./js/salles.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

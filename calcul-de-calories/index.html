@@ -1,0 +1,73 @@
+<!----------------
+    Copyright Jean Khoury. 2023. All Rights Reserved.
+    This file is licensed under the MIT License.
+    License text available at https://opensource.org/licenses/MIT
+-------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/commandes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Commandes</title>
+    
+</head>
+<body>
+    <h1>Calculateur de calories</h1>
+    
+    <div class="container-fluid inner-commande">
+        <div class="row commande-select-bar text-center">
+            <div class="col-6">
+                <label for="command-entree-select">Entrée</label>
+                <select name="entree-selector" class="form-select form-select-lg" id="command-entree-select" title="entree selector">
+                    <option value="-1">select entree</option>
+                </select>
+            </div>
+            
+            <div class="col-6">
+                <label for="command-repas-select">Repas</label>
+                <select name="repas-selector" class="form-select form-select-lg" id="command-repas-select" title="repas selector">
+                    <option value="-1">select repas</option>
+                </select>
+            </div>
+                
+        </div>
+        <div class="row">
+            <div class=" col selector-canva">
+                <img id ="commande-entree-img" src="./images/empty.jpg" alt="entrée">
+                <h2><span id="commande-entree-cal">0</span> Cal</h2>
+            </div>
+            <div class="col selector-canva">
+                <img id ="commande-repas-img" src="./images/empty.jpg" alt="entrée">
+                <h2><span id="commande-repas-cal">0</span> Cal</h2>
+            </div>
+        </div>
+
+        <div class="row border">
+            <div class="col">
+                Sous total: <span id="cal-st">0</span> cal
+            </div>
+            <div class="col">
+                + erreur: <span id="cal-erreur">0</span> cal
+            </div>
+            <div class="col">
+                = Total: 
+                <mark>
+                    <span id="cal-total">0</span> cal
+                </mark>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Jean Khoury. 2023. All Rights Reserved
+        </div>
+    </footer>
+    <script src="./js/nourriture.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

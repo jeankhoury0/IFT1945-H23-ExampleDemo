@@ -46,21 +46,45 @@ function autofillNameInput(name){
 } 
 
 
+function parsedContentSansFormat2(){
+    var output = document.getElementById("parsed-format");
+    var salles = master_data.salles;
+    console.log(salles)
+    output.innerText = ""
+    for (var i in salles){
+        var element = salles[i]
+        console.log(element.nom)
+        // output.innerText = output.innerText + element.nom
+        output.innerText += (" " + element.nom)
+    }
+}
+
+function parseContentAvecFormat(){
+    var output = document.getElementById("parsed-avec-format");
+    var salles = master_data.salles;
+    output.addEventListener("change", console.log("changed"))
+    for(var i in salles){
+        var option_el = document.createElement("option")
+        option_el.text = salles[i].nom
+        output.appendChild(option_el)
+    }
+}
+
 function parsedContentSansFormat(){
-    var output = document.getElementById("parsedFormat")
+    var output = document.getElementById("parsed-format")
     var salles = master_data.salles
     output.innerText = ""
     console.log(salles)
     for (var i in salles){
         var element = salles[i]
         console.log(element.nom)
-        
         output.innerHTML += element.nom + "<br>"
     }
 }
 
 // execution à chaques chargement de la page
-parsedContentSansFormat()
+// parsedContentSansFormat2()
+parseContentAvecFormat()
 // comment faire une addition
 // comment faire un tableau dans un autre document
 // container fluid
